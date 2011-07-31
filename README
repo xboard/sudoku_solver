@@ -2,6 +2,7 @@ This is a Go version of a sudoku solver, mostly based on the
 solution and tests by Peter Norvig http://norvig.com/sudoku.html
 
 To compile and run the solver for all tests in sudoku_test.go just type:
-cd sudoku
-gotest
+
+$ cd sudoku
+$ gotest
 

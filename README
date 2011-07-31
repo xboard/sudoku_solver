@@ -1,5 +1,5 @@
-This is a Go version of a sudoku solver, translated from the
-clever and elegant python solution by Peter Norvig http://norvig.com/sudoku.html
+This is a Go (http://golang.org) version of a sudoku solver, translated from the
+clever and elegant solution by Peter Norvig http://norvig.com/sudoku.html
 
 To compile and run the solver for all tests in sudoku_test.go and the problem set in 
 hardest.txt just type:

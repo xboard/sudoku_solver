@@ -1,7 +1,8 @@
 This is a Go version of a sudoku solver, translated from the
 clever and elegant python solution by Peter Norvig http://norvig.com/sudoku.html
 
-To compile and run the solver for all tests in sudoku_test.go just type:
+To compile and run the solver for all tests in sudoku_test.go and the problem set in 
+hardest.txt just type:
 
 $ cd sudoku
 $ gotest

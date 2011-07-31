@@ -1,3 +1,20 @@
+/*
+Copyright (C) 2011 Flavio Regis de Arruda
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+*/
+
+
+
+
 package sudoku
 
 import (
@@ -79,10 +96,10 @@ func TestSolve(t *testing.T) {
 
 func TestSolveHarvestFile(t *testing.T) {
 	fmt.Println("---		TestSolveHarvest		---")
-	//HARD
-	file, err := os.Open("/home/regis/Documents/Projects/go/workspace/GoNuts/src/pkg/sudoku/hardest.txt")
+	//HARD problems file
+	file, err := os.Open("./hardest.txt")
 	if err != nil {
-		panic("Nao foi possível abrir arquivo hardest.txt : " + err.String())
+		panic("Couldn't open file hardest.txt : " + err.String())
 	}
 
 	defer file.Close()
@@ -101,7 +118,6 @@ func TestSolveHarvestFile(t *testing.T) {
 }
 
 func TestSolveHard(t *testing.T) {
-    //line := ".....6....59.....82....8....45........3........6..3.54...325..6.................."   VERY VERY HARD!!!
     line := "....361.......2......15..296..8.....29....6.5..3...7.4..6.........34.91.9.....47."
 	values := Solve(line)
 	fmt.Println("problem(hard): ", line)

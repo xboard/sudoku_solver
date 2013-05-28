@@ -239,13 +239,13 @@ func Search(values map[string]string) map[string]string {
 	}
 	ch := make(chan map[string]string)
 	for _, d := range values[sq] {
-		go func(dd int) {
+		go func(dd string) {
 			nvalues := cloneValues(values)
-			v := Search(Assign(nvalues, sq, string(dd)))
+			v := Search(Assign(nvalues, sq, dd))
 			if v != nil {
 				ch <- v
 			}
-		}(d)
+		}(string(d))
 	}
 
 	return <-ch

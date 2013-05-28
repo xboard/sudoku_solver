@@ -5,6 +5,6 @@ To compile and run the solver for all tests in sudoku_test.go and the problem se
 hardest.txt just type:
 
 $ cd sudoku
-$ gotest
+$ go test
 
 Edit file hardest.txt to include your own problem set to be solved.

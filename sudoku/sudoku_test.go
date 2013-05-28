@@ -99,7 +99,7 @@ func TestSolveHarvestFile(t *testing.T) {
 	//HARD problems file
 	file, err := os.Open("./hardest.txt")
 	if err != nil {
-		panic("Couldn't open file hardest.txt : " + err.String())
+		panic("Couldn't open file hardest.txt : " + err.Error())
 	}
 
 	defer file.Close()
